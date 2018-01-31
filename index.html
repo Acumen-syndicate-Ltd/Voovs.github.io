@@ -53,15 +53,21 @@ background-repeat: no-repeat;
 
 }
 
+
+p::selection, h1::selection, h2::selection, h4::selection, li::selection, a::selection, .white::selection {
+  background: #ffffff; 
+  color: #9c2020; 
+}
+.dis::selection {
+  background: #ffffff;
+  color: #9c2020
+}
+
 #maintitle {
-
   font-size: 11em;
-
-  margin: 0em 1em 2em 1em;
-
+  margin: .8em 1em 2em 1em;
   height: 1.845em;
-
-  text-shadow:
+         text-shadow: 
            0 1px #9c2020,
            -1px 0 #9c2020,
            -2px 1px #ffffff,
@@ -84,52 +90,32 @@ background-repeat: no-repeat;
            -10px 9px #9c2020,
            0 0 196px #ffffff,
            0 0 196px #ffffff;
- overflow: visible;
+  overflow: visible;
   line-height: .8;
-text-align: center;
+  text-align: center;
 }
-
 .title, .subheader {
-
   font-size: 5em;
-
   margin-left: 3em;
-
   margin-right: 3em;
-
 }
-
 p {
-
   font-size: 2.3em;
-
   margin-left: 10em;
-
   margin-right: 10em;
-
 }
-
 .disclaimer {
-
   margin-top: 1em;
-
 }
-
 
 .paratitle{
-
   font-size: 3em;
-
 }
-
 .list {
-
   font-size: 2.3em;
-
   margin-left: 10em;
-
 }
-
+/* link stuff starts here*/
 a {
 outline: none;
 text-decoration: none;
@@ -146,7 +132,15 @@ font-weight: none;
   color: #9c2020
 }
 
-a:hover{
+a:focus {
+
+}
+#header > a:hover{
+  color: #ffffff;
+  background-color: #9c2020;
+}
+
+ p > a:hover {
 cursor: url(https://i.imgur.com/ZS1gYOz.png);
  text-shadow: 
            0 1px #9c2020,
@@ -162,13 +156,50 @@ cursor: url(https://i.imgur.com/ZS1gYOz.png);
            0 0 16px #ffffff,
            0 0 16px #9c2020;
 }
+
+a:active {
+text-shadow: 0 0 20px #ffffff,
+  0 0 20px #ffffff,
+  0 0 20px #ffffff,
+  0 0 20px #ffffff;
+}
+
+#header > a:active{
+  color: #ffffff
+}
+/*Link stuff ends here*/
+.background #header{
+  background-color: white;
+  overflow: hidden
+}
+
+#header a{
+  float: left;
+  text-align: center;
+  padding: 20px 15px;
+  font-size: 40px;
+  text-decoration: none;
+
+}
+
+#header {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;  
+}
 </style>
 
 
 
 
-
-<h1 id="maintitle" class="title header acumen">Acumen syndicate .Ltd<sup>&ast;</sup></h1>
+<div id="header" class="pageheader">
+   <a href="http://www.acumensyndicate.ca/#maintitle">Acumen</a>
+   <a href="https://www.youtube.com/channel/UC1_17e7fhzKBon-pJsSwvKw" target="_blank">Videos</a>
+   <a href="https://www.webpagefx.com/web-design/hex-to-rgb/#9c2020" target="_blank">Colour</a>
+   <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=acumenofknowledge@gmail.com&tf=1" target="_blank">Contact</a>
+  </div>
+<h1 id="maintitle" class="title header acumen">Acumen syndicate .Ltd<sup class="dis">&ast;</sup></h1>
                        
 <div class="body">
                 
