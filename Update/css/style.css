@@ -1,0 +1,116 @@
+html{
+  font-size: 62.5%;
+  background: url("https://www.wallpaperup.com/uploads/wallpapers/2018/01/25/1196793/ef5386b77f90df93931ba78d5e91b4ad.jpg") no-repeat fixed;
+  background-size: cover;
+}
+body{
+font-family: sans-serif;
+  
+}
+h2::selection, p::selection{
+  background-color: white;
+  color: #9c2020;
+}
+#toptitle{
+  margin-top: 7%;
+}
+h2 {
+ font-size: 7rem;
+   color:  #9c2020;
+  margin: 5% 0 1% 15%
+}
+p {
+  margin: 1% 20% 1% 20%
+}
+.summary {
+  font-size: 3rem;
+}
+.description {
+  font-size: 2rem;
+}
+/* 
+
+
+The stuff below addresses the static background
+
+
+*/
+
+
+
+/* 
+
+
+The part below addresses the header
+
+
+*/
+.background #header{
+  background-color: white;
+  overflow: hidden
+}
+#header a{
+  float: left;
+  text-align: center;
+  padding: 20px 15px;
+  font-size: 40px;
+  text-decoration: none;
+
+}
+#header {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;  
+  background-color: white;
+}
+#header > a:active{
+  color: #ffffff
+}
+a {
+outline: none;
+text-decoration: none;
+}
+
+a:link {
+color: #9c2020;
+  font-weight: bold;
+  text-decoration: underline wavy;
+}
+
+a:visited {
+font-weight: none;
+  color: #9c2020
+}
+
+a:focus {
+
+}
+#header > a:hover{
+  color: #ffffff;
+  background-color: #9c2020;
+}
+
+ p > a:hover {
+cursor: url(https://i.imgur.com/ZS1gYOz.png);
+ text-shadow: 
+           0 1px #9c2020,
+           -1px 0 #9c2020,
+           -2px 1px #ffffff,
+           -1px 2px #9c2020,
+           -3px 2px #ffffff,
+           -2px 3px #9c2020,
+           -3px 4px #ffffff,
+           -4px 3px #9c2020,
+           -5px 4px #ffffff,
+           -4px 5px #9c2020,
+           0 0 16px #ffffff,
+           0 0 16px #9c2020;
+}
+
+a:active {
+text-shadow: 0 0 20px #ffffff,
+  0 0 20px #ffffff,
+  0 0 20px #ffffff,
+  0 0 20px #ffffff;
+}
