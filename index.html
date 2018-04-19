@@ -8,11 +8,11 @@
     
 <meta charset="UTF-8">
 
-<meta name="description" content="The most loose definition of site there is">
+<meta name="description" content="Presentation about the Aborigines of Australia">
 
 <meta property="og:image" content="https://i.imgur.com/Y4oz9cD.png">
     
-<title>Quark_2122</title>
+<title>Social- Aborigines</title>
 
 
 <link rel="shortcut icon" href="https://i.imgur.com/Y4oz9cD.png">
@@ -39,17 +39,32 @@ Basic theme formatting here
 body {
 background-image: url("https://www.wallpaperup.com/uploads/wallpapers/2018/01/25/1196793/ef5386b77f90df93931ba78d5e91b4ad.jpg");
   background-repeat: no-repeat;
+  background-position: center center;
   background-attachment: fixed;
   background-size: cover;
+ /* Background stuff is going on above */
   font-family: sans-serif;
-  width: 100%;
+  width: 100vw;
 }
-p::selection, h1::selection, h2::selection, h4::selection, li::selection, .dis::selection, #firstbr::selection {
-  background: #ffffff; 
+p::selection, h2::selection, h4::selection, li::selection, .dis::selection, a::selection, #firstbr::selection {
+  background: #fff; 
   color: #9c2020; 
+}
+h1::selection, .dis::selection{
+  background: #fff;
+  color: #9c2020;
 }
 
 .subtitle {
+  font-size: 3.8vw;
+  text-align: left;
+  float: left;
+  position: relative;
+  left: 7.5vw;
+  color: #000000;
+  z-index: 10;
+}
+/*#compare{
   font-size: 450%;
   text-align: left;
   float: left;
@@ -57,27 +72,31 @@ p::selection, h1::selection, h2::selection, h4::selection, li::selection, .dis::
   left: 7.5vw;
   color: #9c2020;
   z-index: 10;
-}
+}*/
 .content {
-  font-size: 2.3em;
+  font-size: 1.98vw;
   text-align: center;
-  width: 70%;
+  width: 70vw;
   position: relative;
   left: 12.5vw;
   clear: left;/* tentitive stuff here since columns don't work with this on*/
   z-intex: 5;
 }
-.column {
-  font-size: 230%;
+/*#compare{
+    font-size: 36.8px;
   text-align: center;
-  z-index: 5;
-}
+  width: 70vw;
+  position: relative;
+  left: 12.5vw;
+  clear: left;/* tentitive stuff here since columns don't work with this on*
+  z-intex: 5;
+}*/
 ul{
   list-style-type: none;
   text-align: left;
-  font-size: 2.3em;
+  font-size: 1.98vw;
   text-align: left;
-  width: 70%;
+  width: 70vw;
   position: relative;
   left: 12.5vw;
   z-intex: 5;
@@ -88,8 +107,8 @@ Title related styling
 -------------------------------------------------------------------------------------------------
 */
 #maintitle {
-  font-size: 11em;
-  margin: .8em 1em 1em 1em;
+  font-size: 11vw;
+  margin: 20vh 1.6vw 10vh 1.6vw;
   height: 1.845em;
          text-shadow: 
            0 1px #9c2020,
@@ -197,7 +216,7 @@ Link stuff ends here
 #header a{
   float: left;
   text-align: center;
-  padding: 2.5vh .9vh 2.5vh .9vh;
+  padding: 2.5vh .5vw 2.5vh .5vw;
   font-size: 5vh;
   text-decoration: none;
 
@@ -207,7 +226,7 @@ Link stuff ends here
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%; 
+  width: 100vw; 
   height: 9vh;
   z-index: 20;
 }
@@ -275,6 +294,26 @@ List of programming languages below
   font-weight: bold;
   color: #9c2020;
 }
+
+
+img{
+  width: 100%;
+}
+.half{
+  width: 48%;
+}
+.right{
+  float: right;
+}
+.left{
+  float: left;
+}
+.smlr{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 </style>
 
 </head>
@@ -288,105 +327,25 @@ Page header starts here
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -->
-<body class="background">
- <div id="header" class="pageheader">
-   <a href="http://www.acumensyndicate.ca/#scroll" title="Top of the home page">Acumen</a>
-   <a href="https://www.youtube.com/channel/UC1_17e7fhzKBon-pJsSwvKw" target="_blank" title="Our Youtube channel">Videos</a>
-   <a href="https://www.webpagefx.com/web-design/hex-to-rgb/#9c2020" target="_blank" title="Page with the Acumen red on it">Colour</a>
-   <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=acumenofknowledge@gmail.com&tf=1" target="_blank" title="Opens Gmail with our email address typed in">Contact</a>
-   <a href="http://acumensyndicate.ca/update/" target="_self" title="Another page with our version history">Version</a>
-   <a href="#" title="Open source code for this exact site">Code</a>
-  </div>
-<!-- 
-Page header ends here
-Main title begins here
--->
-  <h1 id="maintitle" class="title">Acumen <br id="#firstbr">syndicate .Ltd<sup class="dis">*</sup></h1>
-<!-- 
-Main title ends here
--------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------
-Content begins here
--->
-  </p>
-    <p class="subtitle">Current status: Idle</p>
-  <p class="content">We&apos;re not doing extensive work on the site&comma; as of right now&comma; though there will still be updates and patches from time to time. Currently&comma; we&apos;re looking into a bit of game design&comma; so there may be a quick browser game coming in the next few months</p>
-  
-    <p class="subtitle">Who is Acumen syndicate?</p>
-  <p class="content">Acumen syndicate is composed of a group of individuals interested in website creation. We strive to learn the way of web developers</p>
-  
-    <p class="subtitle">Why is this webpage here?</p>
-  <p class="content">Well&comma; we are trying to fully comprehend the process of making a website&comma; so hooking it up to a DNS is necessary. It also gives a better sense of completion&comma; when you sync it up to your Github repository. Not to mention that it only costs $1 on discount. It&apos;s even less than you think&comma; since that&apos;s $1 CAD</p>
-  <!--
--------------------------------------------------------------------------------------------------
-How we develop/update the site
--------------------------------------------------------------------------------------------------
-  -->
-    <p class="subtitle">Current development</p>
-  <p class="content">There is quite the extensive list of changes we&apos;d like to add to the site. Some of the more important ones being:</p>
-  <ul id="list">
-    <li>-Connect HTTPS to website</li>
-    <li>-Static footer</li>
-    <li>-Cross platform optimization</li>
-    <li>-Sandwich menu to toggle header or dropdown menu</li>
-    <li>-Custom mouse icon through :hover</li>
-    <li>-Static/dynamic background switch</li>
-    <li>-Embedded video background</li>
-    <li>-Full site into volatile memory</li>
-  </ul>
-    <p class="subtitle">How do we do all this site stuff?</p>
-  <p class="content">If you&apos;d like more specific points&comma; feel free to email us through the &quot;Contact&quot; button on the header. If that doesn&apos;t work&comma; try sending it to acumenofknowledge@gmail.com</p>
-   <p class="content">We start off with the basic code development through <a href="https://codepen.io" target="_blank"> CodePen</a>. It&apos;s a pretty great site for web development&comma; as it has colours and a live preview. Note that&apos;s it&apos;s also free. After the initial development&comma; we place it in our index.html file. This file is linked to a <a href="https://github.com/" target="_blank">Github</a> repository&comma; which is pretty difficult to set up for the first time. We&apos;d recommend watching a few recent Youtube tutorials for this part. The process is surprisingly specific&comma; so don&apos;t just try to get it on your own. After having been synchronized with <a href="https://github.com/" target="_blank">Github</a>&comma; the site goes through <a href="https://www.netlify.com/" target="_blank"> Netlify</a>. This is a free service which will allow you to get free HTTPS&comma; instead of normal HTTP. That &quot;S&quot;&comma; at the end&comma; highly improves your site&apos;s security on the client side. Now&comma; <a href="https://www.netlify.com/" target="_blank"> Netlify</a> will also give you a DNS&comma; though it&apos;s randomized&comma; so the results are pretty ridiculous. The site that you&apos;re on right now got the DNS<a href="http://quirky-raman-8c1296.netlify.com/" target="_blank"> http://quirky-raman-8c1296.netlify.com/</a>&comma; which isn&apos;t ideal for most folks. A custom DNS&comma; like our<a href="http://acumensyndicate.ca" target="_blank"> Acumensyndicate.ca</a>&comma; needs to be obtained through a domain registry. Usually&comma; these do come with a yearly cost.<a href="http://www.freenom.com" target="_blank"> Freenom</a> distributes free DNSs&comma; though we can&apos;t certify how well they perform&comma; having never used it. <a href="http://www.freenom.com" target="_blank"> Freenom</a> also has the off-putting trait of not having HTTPS on their own site! We used<a href="https://ca.godaddy.com/" target="_blank"> Godaddy</a>&comma; a registry that does charge for domains. This particular site had a pretty meaty discount on .CA domains&comma; so that was our motivator. Regardless of what registry you choose&comma; <a href="https://www.netlify.com/" target="_blank"> Netlify</a> will practically give you a tutorial about how to connect it; another reason for using <a href="https://www.netlify.com/" target="_blank"> Netlify</a> in the process. Now your site should be up and running. All that&apos;s left to do is learn some HTML/CSS/JS. Scroll down to see our recommendations</p>
-  
-<!--
--------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------
-  -->
-  <div id="languages">
-    <p class="subtitle">Where do you learn web development languages?</p>
-  <p class="content">Honestly there are a lot of options for starting off with web development. We&apos;ll list the better ones below then dive into deeper explanations. Note all of these are free</p>
+<body>
+ <h1 id="maintitle" class="title">Australian <br id="#firstbr">Aborigines<sup class="dis"></sup></h1>
+    <h1 class="content">The effects of imperialism anyways</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/en/3/3f/Australian_Aboriginal_Flag.svg">
+    <img src="https://i.imgur.com/CYcqZe5.jpg">
+    <p class="subtitle">50% died in the first 10 years of colonization</p>
+    <img src="https://i.imgur.com/Yv7UUPR.jpg">
     
-  <ul id="listlanguages" class="content">
-    <li><a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank">-MDN</a></li>
-    <li><a href="https://www.w3schools.com/" target="_blank">-W3Schools</a></li>
-    <li><a href="https://www.codecademy.com" target="_blank">-Codecademy</a></li>
-    <li><a href="https://www.freecodecamp.org/" target="_blank">-Freecodecamp</a></li>
-  </ul>
-    
-  <p class="content colourword"><a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank"> MDN-</a> Acronym for Mozilla Developer Network&comma; this site provides a very presentation-like learning experience. If you have little patience&comma; this isn&apos;t the option for you. Those who like to take notes and read through long book may be more inclined towards this one. Effectively&comma; these are just really long pages of explaining how aspects of the code work. There are little activities throughout these pages&comma; for more practical experience. There are also assessments for each unit; very similar to modern education structure. The key feature about MDN is how they don&apos;t really tell you exactly how to code. Instead they aim for comprehension of the whole language. All the element tags and selectors aren&apos;t really taught in the course&comma; though through lots of exposure&comma; they just become second nature. I&comma; Voovs&comma; personally use this site for learning stuff&comma; yet most others really dislike the immense patience required for this one
-</p>
-    
-  <p class="content colourword"><a href="https://www.w3schools.com/" target="_blank"> W3Schools-</a> Quickly learning small bits of information is the strategy of this site. If you like slow and steady comprehension of the code&comma; this site is most definitely not for you. Some would hardly consider this a learning platform&comma; as it&apos;s just an explanation of every tag&comma; selector&comma; value&comma; and technique found in web development. However&comma; there are people the appreciate this sort of learning. Commonly these are the ones who want to get straight to web development without learning the theory acpet first. There&apos;s absolutely no problem with being like that&comma; so try this site out. The site is also very good at solving problems when you don&apos;t know a selector like &quot;::selection&quot; or something like that. Unknown prefers this site for learning code&comma; as will many of those who just want to start web development</p>
-    
-  <p class="content colourword"><a href="https://www.codecademy.com" target="_blank">Codecademy-</a> A code-to-learn-code sort of system. If you&apos;ve ever used Swift playgrounds&comma; it&apos;s very similar in layout. Generally most people learn from this site&comma; though it does have a restrictive nature to it. Think of a video game. There are different levels&comma; in this case lessons&comma; with only so much you can do in each one. If you&apos;d like to go through this guided practice style of learning&comma; Codecademy might be for you. A side note about this one is that you can learn more than just web development here
-</p>
-    
-  <p class="content colourword"><a href="https://www.freecodecamp.org/" target="_blank">Freecodecamp-</a> Think of a long list with sort of units. That&apos;s kind of what Freecodecamp is. The actual learning layout is comparable to that of Codecademy. Most people who don&apos;t use Codecademy use Freecodecamp. They are truly very similar in nature&comma; though rumour has it that Freecodecamp is a bit more in depth. If you&apos;re into the layout and guided practice learning style of Codecademy&comma; Freecodecamp is an alternative I&apos;d highly recommend you check out. Maybe you&apos;ll like the phrasing of concepts a bit more. As of writing this&comma; Feb/17/18&comma; Voovs is interested in trying out this option to reinforce programming comprehension 
-</p>
-  </div>
-<!--
--------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------
-  -->
-<!-- This footer is still in development. Feel free to play around with the code&comma; if you want
-  <footer>
-    <p>Thanks for checking out our website!</p>
-    <p>If you enjoyed it&comma; feel free to drop a like</p>
-    <p>Just joking&comma; this isn&apos;t Youtube</p>
-    <p></p>
-    <ul>
-      <li><strong><a href="http://www.acumensyndicate.ca/#scroll">Acumen</a></strong></li>
-      <li> <a href="http://acumensyndicate.ca/update/" target="_self">Version</a></li>
-      <li><a href="#" title="Page in development"> Site ideas</a></li>
-      <li><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=acumenofknowledge@gmail.com&tf=1" target="_blank">Contact</a></li>
-      <li>Page source code (latest)</li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-  </footer>
--->
+    <img src="https://i.imgur.com/nI0dEy4.jpg">
+    <img class="smlr"src="https://i.imgur.com/dQLTBXe.jpg">
+    <p class="subtitle">Last indigenous Tasmainian died in 1878</p>
+    <img src="https://i.imgur.com/Y76Ujfc.jpg">
+    <p class="subtitle">"Terra Nullius"<br> (nobody's land)</p>
+    <img class="half right" src="https://i.imgur.com/ggEe9fo.jpg">
+    <img class="half left" src="https://i.imgur.com/YlHZ0pc.jpg">
+    <img src="https://i.imgur.com/hPpU9G4.jpg">
+    <img src="https://i.imgur.com/qE34VNb.png">
+    <img src="https://i.imgur.com/WhAHYja.jpg">
+    <img class="smlr" src="https://i.imgur.com/F6cnD8u.jpg">
+    <p class="subtitle">Thanks for listening</p>
   </body>
 </html>
