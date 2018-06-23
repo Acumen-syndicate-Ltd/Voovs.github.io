@@ -5,7 +5,7 @@
 	<!ENTITY ns_xlink "http://www.w3.org/1999/xlink">
 ]>
 <svg  version="1.1" id="Layer_1" xmlns="&ns_svg;" xmlns:xlink="&ns_xlink;" width="585.48" height="585.48"
-	 viewBox="0 0 585.48 585.48" overflow="visible" enable-background="new 0 0 585.48 585.48" xml:space="preserve">
+	 viewBox="0 0 16 16" overflow="visible" enable-background="new 0 0 585.48 585.48" xml:space="preserve">
 <g>
 	<g>
 		<linearGradient id="XMLID_2_" gradientUnits="userSpaceOnUse" x1="292.7407" y1="584.9805" x2="292.7407" y2="0.5005">
